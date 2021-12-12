@@ -10,7 +10,7 @@ extern void Data_Init(void);
 extern void Data_Write_Pix(int PixNum, char BitNum, char Red, char Green, char Blue);
 
 // 信号输出
-extern HAL_StatusTypeDef HAL_TIM_DMA_Send_Start();
+extern HAL_StatusTypeDef HAL_TIM_DMA_Send_Start(void);
 // 等待发送完成 如果没在发送则直接退出 返回值为发送时长 ms
 extern int WaitForSending(void);
 
